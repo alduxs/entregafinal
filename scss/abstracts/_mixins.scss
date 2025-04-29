@@ -1,0 +1,12 @@
+@mixin grid($display, $template-columns) {
+    display: $display;
+    grid-template-columns: $template-columns;
+}
+
+@mixin border($tamanio, $tipo,$color) {
+    border: $tamanio $tipo $color;
+}
+@mixin border-bottom($tamanio, $tipo,$color) {
+    border-bottom: $tamanio $tipo $color;
+}
+  

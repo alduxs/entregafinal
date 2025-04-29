@@ -1,0 +1,17 @@
+
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
+
+  
+  .productos--columns {
+    grid-template-columns: ;
+  }
+  /*
+* PAGINA PRODUCTOS
+*/
+
+  .contenido-estatico__bloque--unafraccion {
+    grid-template-columns: 900px;
+  }
+}
