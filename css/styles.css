@@ -130,12 +130,17 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
+  width: 100%;
+  margin: 0;
 }
 .productos .items {
   margin: 30px;
   padding: 30px;
   background-color: #e2e2e2;
   border: 1px solid #ccc;
+}
+.productos .items h2 {
+  font-size: 1.1rem;
 }
 .productos .items .imagen {
   width: 100%;
@@ -157,6 +162,26 @@ body {
   grid-template-columns: 1fr;
 }
 
+.titulo-home {
+  width: 100%;
+  margin: 40px 0px 10px;
+  padding: 0px 30px;
+}
+.titulo-home h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.titulos-seccion {
+  width: 100%;
+  margin: 40px 0px 10px;
+  padding: 0px 30px;
+}
+.titulos-seccion h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
 /* Productos */
 /* Colores de Backgrounds */
 /* Font colors */
@@ -164,6 +189,16 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   padding-bottom: 30px;
+  width: 100%;
+  margin: 0;
+}
+.productos-container .titulos-seccion {
+  width: 100%;
+  margin: 40px 0px 10px;
+  padding: 0px 30px;
+}
+.productos-container .titulos-seccion h1 {
+  font-size: 1.3rem;
 }
 .productos-container aside {
   margin: 30px;
@@ -180,8 +215,10 @@ body {
 .productos-container .productos-group .productos-items {
   margin: 30px;
   padding: 30px;
-  /*background-color: $bg-quaternary-color;*/
   border-bottom: 1px, solid, #ccc;
+}
+.productos-container .productos-group .productos-items h2 {
+  font-size: 1.1rem;
 }
 .productos-container .productos-group .productos-items .imagen {
   width: 100%;
@@ -249,13 +286,29 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 5px;
   }
+  .productos .items h2 {
+    font-size: 1.4rem;
+  }
   .columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .productos-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: auto auto auto auto;
+  }
+  .productos-container .titulos-seccion {
+    grid-column: 1/span 4;
+  }
+  .productos-container .titulos-seccion h1 {
+    font-size: 1.6rem;
+  }
+  .productos-container .productos-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .productos-container .productos-group .productos-items h2 {
+    font-size: 1.4rem;
   }
   .contenido-estatico {
     padding: 30px 30px;
@@ -276,6 +329,9 @@ body {
     order: 2;
     margin-left: 30px;
   }
+  .titulo-home h1 {
+    font-size: 1.6rem;
+  }
 }
 /* Colores de Backgrounds */
 /* Font colors */
@@ -293,9 +349,24 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 1170px;
+    margin: 0 auto;
+  }
+  .productos .items h2 {
+    font-size: 1.5rem;
+  }
   .productos-container {
+    width: 1170px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 4fr;
+  }
+  .productos-container .titulos-seccion h1 {
+    font-size: 1.8rem;
   }
   .productos-container .productos-group {
     display: grid;
@@ -305,8 +376,18 @@ body {
     margin: 1px;
     padding: 30px;
   }
+  .productos-container .productos-group .productos-items h2 {
+    font-size: 1.5rem;
+  }
   .contenido-estatico .contenido-estatico__bloque--unafraccion {
     grid-template-columns: 900px;
+  }
+  .titulo-home {
+    width: 1170px;
+    margin: 40px auto 10px;
+  }
+  .titulo-home h1 {
+    font-size: 1.8rem;
   }
 }
 
