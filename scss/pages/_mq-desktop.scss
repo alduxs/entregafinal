@@ -19,7 +19,7 @@
     width: 1170px;
     margin: 0 auto;
     .items {
-      h2{
+      h2 {
         font-size: 1.5rem;
       }
     }
@@ -28,8 +28,8 @@
     width: 1170px;
     margin: 0 auto;
     @include grid(grid, 1fr 4fr);
-    .titulos-seccion{
-      h1{
+    .titulos-seccion {
+      h1 {
         font-size: 1.8rem;
       }
     }
@@ -38,22 +38,29 @@
       .productos-items {
         margin: 1px;
         padding: 30px;
-        h2{
+        h2 {
           font-size: 1.5rem;
-        }      
+        }
       }
-
     }
   }
   .contenido-estatico {
+    padding: 0px 30px 30px 30px;
+    width: 1170px;
+    margin: 0 auto;
+    .titulos-seccion{
+      h1{
+        font-size: 1.8rem;
+      }
+    }
     .contenido-estatico__bloque--unafraccion {
       grid-template-columns: 900px;
     }
   }
-  .titulo-home{
+  .titulo-home {
     width: 1170px;
     margin: 40px auto 10px;
-    h1{
+    h1 {
       font-size: 1.8rem;
     }
   }

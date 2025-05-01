@@ -33,11 +33,20 @@
       }
     }
   }
-  
   .contenido-estatico {
     padding: 30px 30px;
+    .titulos-seccion{
+      h1{
+        font-size: 1.6rem;
+      }
+    }
     .bloque{
       @include grid(grid,1fr 1fr);
+      .texto{
+        .subtitulo{
+            font-size: 1.4rem;
+        }
+      }
     }
     .contenido-estatico__bloque--unafraccion {
       grid-template-columns: 1fr;

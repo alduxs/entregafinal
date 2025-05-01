@@ -2,17 +2,24 @@
 @import "../abstracts/mixins";
 
 .contenido-estatico {
-  padding: 30px 30px;
-  .titulo {
-    padding: 0px 0px 15px;
-    font-weight: 700;
-    font-size: 2rem;
+  @include grid(grid, 1fr);
+  padding: 0px 30px 30px 30px;
+  width: 100%;
+  margin: 0;
+  .titulos-seccion{
+    width: 100%;
+    margin: 40px 0px 10px;
+    padding: 0px 0px;
+    h1{
+      font-size: 1.3rem;
+    }
   }
   .bloque{
     padding-bottom: 30px;
     margin-bottom: 30px;
     @include grid(grid,1fr);
     @include border-bottom(1px, solid, #ccc);
+
     div{
         margin-bottom: 15px;
     }
@@ -21,7 +28,7 @@
     }
     .texto{
         .subtitulo{
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             font-weight: 600;
         }
     }
